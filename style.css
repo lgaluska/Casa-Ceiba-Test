@@ -40,12 +40,17 @@ body {
 nav {
     position: fixed;
     top: 0;
+    height: 108px;
+    padding: 0 24px;
     width: 100%;
-    padding: 14px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,0.28);
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.22),
+            rgba(0,0,0,0.12)
+        );
     backdrop-filter: blur(14px);
     border-bottom:
         1px solid rgba(255,255,255,0.15);
@@ -58,7 +63,8 @@ nav {
 }
 
 nav.scrolled {
-    padding: 8px 40px;
+    height: 108px;
+    padding: 0 24px;
     background:
         rgba(245, 240, 230, 0.92);
     box-shadow:
@@ -78,8 +84,8 @@ nav.scrolled {
     display: block;
     filter:
         drop-shadow(
-            0 3px 10px
-            rgba(0,0,0,0.45)
+            0 4px 14px
+            rgba(0,0,0,0.55)
         );
 }
 
@@ -222,20 +228,27 @@ section {
     color: var(--green-dark);
 }
 
+.gallery-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 #gallery {
     display: grid;
+
     grid-template-columns:
         repeat(
             auto-fit,
-            minmax(220px, 1fr)
+            minmax(260px, 1fr)
         );
-
     gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #gallery img {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    height: 200px;
     object-fit: cover;
     border-radius: 18px;
     box-shadow:
@@ -244,6 +257,7 @@ section {
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
+    max-width: 320px;
 }
 
 #gallery img:hover {
@@ -306,6 +320,13 @@ footer {
 }
 
 @media (max-width: 900px) {
+    nav {
+        height: 100px;
+        padding: 0 16px;
+    }
+    .logo img {
+        height: 90px;
+    }
 
     #about {
         grid-template-columns: 1fr;
@@ -317,6 +338,8 @@ footer {
         border: none;
         color: white;
         font-size: 2rem;
+        padding: 0;
+        line-height: 1;
     }
 
     #menu {
@@ -333,6 +356,17 @@ footer {
 
     #menu.open {
         display: flex;
+    }
+
+    #gallery {
+        display: grid;
+        grid-template-columns:
+            repeat(
+                auto-fill,
+                minmax(170px, 170px)
+            );
+        justify-content: center;
+        gap: 20px;
     }
 }
 

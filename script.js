@@ -343,6 +343,42 @@ const aboutSlideshow =
         "aboutSlideshow"
     );
 
+if (
+    aboutSlideshow &&
+    aboutImages.length > 0
+) {
+
+    aboutSlideshow.src =
+        `web/${aboutImages[0]}.webp`;
+
+}
+
+if (aboutSlideshow) {
+
+    aboutSlideshow.onerror =
+        () => {
+
+            console.warn(
+                "Missing image:",
+                aboutSlideshow.src
+            );
+
+            aboutIndex++;
+
+            if (
+                aboutIndex >=
+                aboutImages.length
+            ) {
+                aboutIndex = 0;
+            }
+
+            aboutSlideshow.src =
+                `web/${aboutImages[aboutIndex]}.webp`;
+
+        };
+
+}
+
 if (aboutSlideshow) {
 
     setInterval(() => {
