@@ -380,6 +380,8 @@ footer {
         object-fit: cover;
         border-radius: 18px;
         max-width: none;
+
+        border: 8px solid blue;
     }
 
 }
