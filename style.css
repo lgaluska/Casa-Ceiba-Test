@@ -359,7 +359,8 @@ footer {
     }
 
     #gallery {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         grid-template-columns:
             repeat(
                 auto-fill,
@@ -368,6 +369,13 @@ footer {
         justify-content: center;
         gap: 20px;
     }
+
+    #gallery img {
+        width: 170px;
+        height: 128px;
+        flex: none;
+    }
+
 }
 
 #galleryFilters {
