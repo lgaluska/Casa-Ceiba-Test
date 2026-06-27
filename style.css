@@ -188,7 +188,7 @@ section {
 
 .amenity {
     text-align: center;
-    padding: 35px;
+    padding: 24px;
     background: white;
     border-radius: 22px;
     box-shadow: 
@@ -204,9 +204,9 @@ section {
 }
 
 .amenity i {
-    font-size: 3rem;
-    color: #4f7f42;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--green-primary);
+    margin-bottom: 16px;
 }
 
 #about {
