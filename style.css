@@ -381,7 +381,35 @@ footer {
         border-radius: 18px;
         max-width: none;
     }
+    #amenities {
+        grid-template-columns:
+            repeat(2, 1fr);
+        gap: 12px;
+    }
 
+    .amenity {
+        background: none;
+        box-shadow: none;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .amenity i {
+        font-size: 1.1rem;
+        margin: 0 10px 0 0;
+    }
+
+    .amenity h3 {
+        margin: 0;
+        font-size: 0.95rem;
+    }
+
+    .amenity p {
+        display: none;
+    }
 }
 
 #galleryFilters {
