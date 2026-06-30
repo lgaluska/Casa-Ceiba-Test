@@ -1,212 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Ceiba</title>
 
-    <link rel="stylesheet" href="style.css?v=1">
-
+    <link rel="stylesheet" href="style.css?v=2">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body id="top">
 
-<header class="hero">
+    <!-- =====================================
+         Header / Hero
+    ====================================== -->
 
-    <nav>
+    <header class="hero">
 
-<a href="#top" class="logo">
-    <img
-        id="headerLogo"
-        src="CasaCeibaLogoLight.png"
-        alt="Casa Ceiba">
-</a>
+        <nav>
 
-        <button id="menuButton">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+            <a href="#top" class="logo">
+                <img id="headerLogo"
+                     src="CasaCeibaLogoLight.png"
+                     alt="Casa Ceiba">
+            </a>
 
-        <ul id="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#amenities">Amenities</a></li>
-            <li><a href="#gallerySection">Gallery</a></li>
-            <li><a href="#booking">Booking</a></li>
-            <li><a href="#location">Location</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+            <button id="menuButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-    </nav>
+            <ul id="menu">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallerySection">Gallery</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <div class="hero-content">
+        </nav>
 
-        <h1>Casa Ceiba</h1>
+        <div class="hero-content">
 
-        <p>
-            Your tropical getaway surrounded by nature
-        </p>
+            <h1>Casa Ceiba</h1>
 
-        <a href="#booking" class="hero-button">
-            Book Your Stay
-        </a>
+            <p>
+                Your tropical getaway surrounded by nature
+            </p>
+
+            <a href="#booking" class="hero-button">
+                Book Your Stay
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- =====================================
+         Main Content
+    ====================================== -->
+
+    <main>
+
+        <!-- About -->
+
+        <section id="about">
+
+            <div class="about-text">
+
+                <span>WELCOME TO CASA CEIBA</span>
+
+                <h2>A peaceful stay in the heart of nature</h2>
+
+                <p>
+                    Casa Ceiba is a private tropical retreat located near Bacalar,
+                    offering comfort, privacy and a relaxing atmosphere.
+                </p>
+
+            </div>
+
+            <div class="about-image">
+                <img id="aboutSlideshow"
+                     src="web/bedr01.webp"
+                     alt="Casa Ceiba">
+            </div>
+
+        </section>
+
+        <!-- Gallery -->
+
+        <section id="gallerySection">
+
+            <h2>Gallery</h2>
+
+            <div id="galleryFilters"></div>
+
+            <div class="gallery-wrapper">
+                <div id="gallery"></div>
+            </div>
+
+        </section>
+
+        <!-- Amenities -->
+
+        <section id="amenities">
+
+            <div class="amenity">
+                <i class="fa-solid fa-wifi"></i>
+                <span class="amenity-name">WiFi</span>
+                <span class="amenity-detail">High-speed internet</span>
+            </div>
+
+            <div class="amenity">
+                <i class="fa-solid fa-car"></i>
+                <span class="amenity-name">Parking</span>
+                <span class="amenity-detail">Free private parking</span>
+            </div>
+
+            <div class="amenity">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <span class="amenity-name">Beach</span>
+                <span class="amenity-detail">Near beautiful beaches</span>
+            </div>
+
+            <div class="amenity">
+                <i class="fa-regular fa-snowflake"></i>
+                <span class="amenity-name">Air Conditioning</span>
+                <span class="amenity-detail">Air conditioning in all rooms</span>
+            </div>
+
+            <div class="amenity">
+                <i class="fa-solid fa-water-ladder"></i>
+                <span class="amenity-name">Pool</span>
+                <span class="amenity-detail">Outdoor swimming pool</span>
+            </div>
+
+            <div class="amenity">
+                <i class="fa-solid fa-utensils"></i>
+                <span class="amenity-name">Kitchen</span>
+                <span class="amenity-detail">Fully equipped kitchen</span>
+            </div>
+
+        </section>
+
+        <!-- Booking -->
+
+        <section id="booking">
+
+            <h2>Check Availability</h2>
+
+            <form class="booking-form">
+
+                <input type="date">
+                <input type="date">
+
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+
+                <button type="button">
+                    Book Now
+                </button>
+
+            </form>
+
+            <p class="demo-text">
+                Demo version - booking functionality not connected yet.
+            </p>
+
+        </section>
+
+        <!-- Location -->
+
+        <section id="location">
+
+            <h2>Find Us</h2>
+
+            <iframe
+                src="https://maps.google.com/maps?q=18.754224,-88.338518&z=14&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="contact">
+
+        <h2>Casa Ceiba</h2>
+
+        <p>Yucatán, Mexico</p>
+        <p>info@casaceiba.com</p>
+
+    </footer>
+
+    <!-- Lightbox -->
+
+    <div id="lightbox">
+
+        <button id="prevButton">&#10094;</button>
+
+        <img id="lightboxImage" alt="Gallery image">
+
+        <button id="nextButton">&#10095;</button>
+
+        <div id="lightboxCounter"></div>
 
     </div>
 
-</header>
-
-<section id="amenities">
-
-    <div class="amenity">
-        <i class="fa-solid fa-wifi"></i>
-        <h3>WiFi</h3>
-        <p>High-speed internet</p>
-    </div>
-
-    <div class="amenity">
-        <i class="fa-solid fa-car"></i>
-        <h3>Parking</h3>
-        <p>Free private parking</p>
-    </div>
-
-    <div class="amenity">
-        <i class="fa-solid fa-umbrella-beach"></i>
-        <h3>Beach</h3>
-        <p>Near beautiful beaches</p>
-    </div>
-
-    <div class="amenity">
-        <i class="fa-regular fa-snowflake"></i>
-        <h3>Air Conditioning</h3>
-        <p>Stay cool and comfortable</p>
-    </div>
-
-    <div class="amenity">
-        <i class="fa-solid fa-water-ladder"></i>
-        <h3>Pool</h3>
-        <p>Outdoor swimming pool</p>
-    </div>
-
-    <div class="amenity">
-        <i class="fa-solid fa-utensils"></i>
-        <h3>Kitchen</h3>
-        <p>Fully equipped kitchen</p>
-    </div>
-
-</section>
-
-<section id="about">
-
-    <div class="about-text">
-
-        <span>WELCOME TO CASA CEIBA</span>
-
-        <h2>
-            A peaceful stay in the heart of nature
-        </h2>
-
-        <p>
-            Casa Ceiba is a private tropical retreat
-            located near Bacalar, offering comfort,
-            privacy and a relaxing atmosphere.
-        </p>
-
-    </div>
-
-    <div class="about-image">
-    <img
-        id="aboutSlideshow"
-        src="web/bedr01.webp"
-        alt="Casa Ceiba">
-    </div>
-
-</section>
-
-<section id="gallerySection">
-
-    <h2>Gallery</h2>
-
-    <div id="galleryFilters"></div>
-    <div class="gallery-wrapper">
-        <div id="gallery"></div>
-    </div>
-
-</section>
-
-<section id="booking">
-
-    <h2>Check Availability</h2>
-
-    <form class="booking-form">
-
-        <input type="date">
-
-        <input type="date">
-
-        <input type="text"
-               placeholder="Your Name">
-
-        <input type="email"
-               placeholder="Your Email">
-
-        <button type="button">
-            Book Now
-        </button>
-
-    </form>
-
-    <p class="demo-text">
-        Demo version - booking functionality not connected yet.
-    </p>
-
-</section>
-
-<section id="location">
-
-    <h2>Find Us</h2>
-
-    <iframe
-        src="https://maps.google.com/maps?q=18.754224,-88.338518&z=14&output=embed"
-        loading="lazy">
-    </iframe>
-
-</section>
-
-<footer id="contact">
-
-    <h2>Casa Ceiba</h2>
-
-    <p>
-        Yucatán, Mexico
-    </p>
-
-    <p>
-        info@casaceiba.com
-    </p>
-
-</footer>
-
-<div id="lightbox">
-
-    <button id="prevButton">
-        &#10094;
-    </button>
-
-    <img id="lightboxImage">
-
-    <button id="nextButton">
-        &#10095;
-    </button>
-
-    <div id="lightboxCounter">
-    </div>
-
-</div>
-
-<script src="gallery.js"></script>
-<script src="script.js"></script>
+    <script src="gallery.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
