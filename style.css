@@ -162,6 +162,12 @@ nav.scrolled #menu a:hover {
     align-items: center;
 }
 
+.about-text {
+    background: #e5e5e5;
+    border-radius: 16px;
+    padding: 16px;
+}
+
 .about-image img {
     width: 100%;
     border-radius: 20px;
